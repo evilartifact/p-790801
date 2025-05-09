@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
         </div>
       </div>
       
-      <div className="relative z-10 w-full max-w-[1000px] mx-auto mt-auto overflow-hidden h-[65vh]">
+      <div className="relative z-10 w-full max-w-[1000px] mx-auto mt-auto overflow-hidden h-[80vh]">
         <img
           src="/lovable-uploads/194c624e-2bfc-4841-b101-30dca8ca5db2.png"
           alt="Company overview dashboard"

@@ -22,16 +22,35 @@ const WaitlistForm: React.FC = () => {
     
     setIsSubmitting(true);
     
-    // This would be replaced with actual Mailchimp integration
-    // For now, we'll simulate a successful submission
-    setTimeout(() => {
+    try {
+      // Replace this URL with your Google Apps Script Web App URL
+      const scriptUrl = "YOUR_GOOGLE_SCRIPT_URL";
+      
+      const response = await fetch(scriptUrl, {
+        method: "POST",
+        mode: "no-cors", // Important for CORS issues
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+      
+      // Since no-cors doesn't give us response details, we assume it worked
       toast({
         title: "Success!",
         description: "You've been added to our waitlist.",
       });
       setEmail("");
+    } catch (error) {
+      toast({
+        title: "Something went wrong",
+        description: "Failed to add you to the waitlist. Please try again later.",
+        variant: "destructive",
+      });
+      console.error("Error submitting form:", error);
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
