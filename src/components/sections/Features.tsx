@@ -1,40 +1,42 @@
+
 import React from "react";
-import FeatureCard from "@/components/ui/FeatureCard";
+import JobFeatureCard from "@/components/ui/JobFeatureCard";
 
 export const Features: React.FC = () => {
   const features = [
     {
       id: 1,
-      title: "Instant Answers",
-      description:
-        "No more endless searching online - just ask Nova to skip the noise and find the answers you're looking for",
+      title: "Summarizes Glassdoor, Reddit, and LinkedIn into one clean report",
+      icon: "file-text",
     },
     {
       id: 2,
-      title: "Creative Productivity",
-      description:
-        "Generate beautiful imagery, summarize or find content on websites, draft emails and documents, come up with quick and creative recipes for dinner. Don't think - just create.",
+      title: "Shows pros, cons, salary ranges, and hiring patterns",
+      icon: "chart-bar",
+    },
+    {
+      id: 3,
+      title: "Lets you know if a company is worth applying to",
+      icon: "check",
     },
   ];
 
   return (
-    <div className="flex flex-col items-center pt-[156px] px-5">
-      <div className="flex flex-col items-center text-center mb-[86px]">
-        <h2 className="text-6xl font-semibold text-[#080808] leading-[70px] mb-4 max-md:text-5xl max-md:leading-[56px] max-sm:text-4xl max-sm:leading-[44px]">
-          Meet Nova
+    <div className="flex flex-col items-center pt-[100px] px-5">
+      <div className="flex flex-col items-center text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-semibold text-[#080808] leading-tight mb-6">
+          Make Smarter Career Moves
         </h2>
-        <p className="text-[28px] text-[#080808] font-light leading-10 max-w-[652px] max-md:text-2xl max-md:leading-8 max-sm:text-lg max-sm:leading-7">
-          The internet is overflowing with information, making it harder than
-          ever to stay productive, creative, and focused. Nova helps you cut
-          through the noise and get things done with ease.
+        <p className="text-xl md:text-2xl text-[#080808] font-light leading-relaxed max-w-[800px]">
+          Our AI analyzes thousands of data points across the web to give you the complete picture of what it's really like to work somewhere.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-8 max-w-[1569px] px-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] px-5">
         {features.map((feature) => (
-          <FeatureCard
+          <JobFeatureCard
             key={feature.id}
             title={feature.title}
-            description={feature.description}
+            icon={feature.icon as "file-text" | "chart-bar" | "check"}
           />
         ))}
       </div>

@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,4 +99,20 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.feature-card {
+  @apply flex flex-col items-center p-8 bg-white rounded-2xl shadow-lg transition-all hover:shadow-xl;
+}
+
+.feature-icon {
+  @apply w-16 h-16 mb-4 text-[#110B53];
+}
+
+.waitlist-form {
+  @apply flex flex-col md:flex-row gap-4 w-full max-w-md mx-auto;
+}
+
+.cta-section {
+  @apply py-16 px-6 bg-gradient-to-br from-[#110B53] to-[#6E59A5] text-white text-center rounded-2xl;
 }

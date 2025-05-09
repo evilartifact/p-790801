@@ -3,12 +3,8 @@ import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import Features from "@/components/sections/Features";
+import CallToAction from "@/components/sections/CallToAction";
 import Footer from "@/components/sections/Footer";
-import SearchBar from "@/components/ui/SearchBar";
-
-// Placeholder image URL - replace with actual image in production
-const heroImageUrl =
-  "https://cdn.builder.io/api/v1/image/assets/TEMP/cdaeea5cb03fa0184784e428de3e074cc6ba6657?placeholderIfAbsent=true";
 
 const Index: React.FC = () => {
   return (
@@ -22,9 +18,9 @@ const Index: React.FC = () => {
           <div className="w-full max-w-[1920px] relative">
             <div className="flex flex-col items-center">
               <Navbar />
-              <Hero heroImageUrl={heroImageUrl} />
-              <SearchBar />
+              <Hero />
               <Features />
+              <CallToAction />
               <Footer />
             </div>
           </div>
