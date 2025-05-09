@@ -5,14 +5,8 @@ import WaitlistForm from "@/components/ui/WaitlistForm";
 export const Hero: React.FC = () => {
   return (
     <div className="relative w-full min-h-[85vh] flex flex-col justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://cdn.rtbrain.app/browser/Hero_BG_1742742329.svg+xml"
-          alt="background"
-          className="w-full h-full object-cover rounded-2xl"
-        />
-      </div>
+      {/* Background Gradient */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-[#E5DEFF] via-[#D6BCFA] to-[#9b87f5] rounded-2xl"></div>
       
       {/* Content overlay */}
       <div className="relative z-10 flex flex-col items-center text-center pt-[82px] px-5 w-full">
@@ -27,11 +21,11 @@ export const Hero: React.FC = () => {
         </div>
       </div>
       
-      <div className="relative z-10 w-full max-w-[1000px] mx-auto mt-auto pb-10">
+      <div className="relative z-10 w-full max-w-[1000px] mx-auto mt-auto overflow-hidden h-[40vh]">
         <img
-          src="/lovable-uploads/84f652de-81e6-4a7a-9ee6-3628f0e33d3d.png"
+          src="/lovable-uploads/194c624e-2bfc-4841-b101-30dca8ca5db2.png"
           alt="Company overview dashboard"
-          className="w-full h-auto filter drop-shadow-[0px_0px_76px_rgba(61,_57,_93,_0.25)]"
+          className="w-full object-cover object-top"
         />
       </div>
     </div>
