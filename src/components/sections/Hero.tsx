@@ -1,6 +1,7 @@
 
 import React from "react";
 import WaitlistForm from "@/components/ui/WaitlistForm";
+import { Badge } from "@/components/ui/badge";
 
 export const Hero: React.FC = () => {
   return (
@@ -18,10 +19,15 @@ export const Hero: React.FC = () => {
         </p>
         <div className="max-w-md w-full">
           <WaitlistForm />
+          <div className="flex justify-center mt-4">
+            <Badge variant="outline" className="bg-white/50 backdrop-blur-sm text-[#110B53] py-1 px-3 text-sm font-medium border border-[#9b87f5]/30">
+              More than 100 job seekers already joined
+            </Badge>
+          </div>
         </div>
       </div>
       
-      <div className="relative z-10 w-full max-w-[1000px] mx-auto mt-auto overflow-hidden h-[40vh]">
+      <div className="relative z-10 w-full max-w-[1000px] mx-auto mt-auto overflow-hidden h-[65vh]">
         <img
           src="/lovable-uploads/194c624e-2bfc-4841-b101-30dca8ca5db2.png"
           alt="Company overview dashboard"
