@@ -4,7 +4,7 @@ import WaitlistForm from "@/components/ui/WaitlistForm";
 
 export const CallToAction: React.FC = () => {
   return (
-    <section className="cta-section mt-24 max-w-[1400px] mx-auto">
+    <section className="w-full bg-gradient-to-br from-[#110B53] to-[#6E59A5] text-white text-center rounded-2xl py-16 px-6 mt-24 mx-auto">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           Stop applying blind. Join early users and get smart about your next move.

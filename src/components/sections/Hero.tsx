@@ -29,8 +29,8 @@ export const Hero: React.FC = () => {
       
       <div className="relative z-10 w-full max-w-[1000px] mx-auto mt-auto pb-10">
         <img
-          src="https://cdn.rtbrain.app/browser/job_search_dashboard_1746817054.png"
-          alt="Job search dashboard preview"
+          src="/lovable-uploads/84f652de-81e6-4a7a-9ee6-3628f0e33d3d.png"
+          alt="Company overview dashboard"
           className="w-full h-auto filter drop-shadow-[0px_0px_76px_rgba(61,_57,_93,_0.25)]"
         />
       </div>

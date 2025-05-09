@@ -28,8 +28,10 @@ const JobFeatureCard: React.FC<JobFeatureCardProps> = ({
   };
 
   return (
-    <div className={cn("feature-card", className)}>
-      {renderIcon()}
+    <div className={cn("bg-[#FDFDFD] p-6 rounded-xl border-2 border-[#080808] flex flex-col items-center", className)}>
+      <div className="w-16 h-16 mb-4 text-[#110B53]">
+        {renderIcon()}
+      </div>
       <p className="text-xl text-[#080808] font-medium text-center">{title}</p>
     </div>
   );
